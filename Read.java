@@ -10,7 +10,7 @@ import static java.nio.file.StandardOpenOption.CREATE;
 public class Read {
     public static void read(int x){
 
-        Path file = Paths.get("C:\\Users\\mn145140\\Desktop\\Java\\WarCardGame\\src");
+        Path file = Paths.get("C:\\Users\\mn145140\\Desktop\\Java\\War\\src\\Score.txt");
         InputStream input;
         try{
             input = Files.newInputStream(file);
