@@ -75,11 +75,18 @@ public class Main {
             System.out.println("--------------------------------------------------");
             if(playerWinner == true){
                 System.out.println("You WIN the game!! Congratulations :)))\n " );
-                System.out.println("~~~~~~~~~~THANKS FOR PLAYING!!!~~~~~~~~~~");
+                System.out.println("~~~~~~~~~~Thanks for playing!~~~~~~~~~~");
+                System.out.println("Player won " + playerCount + " rounds.");
+                System.out.println("Opponent won " + opponentCount + " rounds.");
+                Write.write(Integer.toString(playerCount));
             }
             else if(opponentWinner == true){
                 System.out.println("The opponent wins the game... Bummer :((( \n ");
-                System.out.println("~~~~~~~~~~THANKS FOR PLAYING!!!~~~~~~~~~~");
+                System.out.println("~~~~~~~~~~Thanks for playing!~~~~~~~~~~");
+                System.out.println("Player won " + playerCount + " rounds.");
+                System.out.println("Opponent won " + opponentCount + " rounds.");
+                Write.write(Integer.toString(playerCount));
+                Write.write(Integer.toString(opponentCount));
             }
             System.out.println("Press (q) to quit the game. ");
             if(input.nextLine().equals("q")){
@@ -88,6 +95,8 @@ public class Main {
                 System.out.println("Player won " + playerCount + " rounds.");
                 System.out.println("Opponent won " + opponentCount + " rounds.");
                 System.out.println("Thanks for playing!");
+                Write.write(Integer.toString(playerCount));
+                Write.write(Integer.toString(opponentCount));
             }
         }
     }
