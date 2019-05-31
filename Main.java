@@ -76,27 +76,24 @@ public class Main {
             if(playerWinner == true){
                 System.out.println("You WIN the game!! Congratulations :)))\n " );
                 System.out.println("~~~~~~~~~~Thanks for playing!~~~~~~~~~~");
-                System.out.println("Player won " + playerCount + " rounds.");
-                System.out.println("Opponent won " + opponentCount + " rounds.");
-                Write.write(Integer.toString(playerCount));
+
+                Write.write(String.valueOf(playerCount), String.valueOf(opponentCount));
+
             }
             else if(opponentWinner == true){
                 System.out.println("The opponent wins the game... Bummer :((( \n ");
                 System.out.println("~~~~~~~~~~Thanks for playing!~~~~~~~~~~");
-                System.out.println("Player won " + playerCount + " rounds.");
-                System.out.println("Opponent won " + opponentCount + " rounds.");
-                Write.write(Integer.toString(playerCount));
-                Write.write(Integer.toString(opponentCount));
+
+                Write.write(String.valueOf(playerCount), String.valueOf(opponentCount));
             }
             System.out.println("Press (q) to quit the game. ");
             if(input.nextLine().equals("q")){
                 System.out.println("\n");
                 play = false;
-                System.out.println("Player won " + playerCount + " rounds.");
-                System.out.println("Opponent won " + opponentCount + " rounds.");
+
                 System.out.println("Thanks for playing!");
-                Write.write(Integer.toString(playerCount));
-                Write.write(Integer.toString(opponentCount));
+
+                Write.write(String.valueOf(playerCount), String.valueOf(opponentCount));
             }
         }
     }
