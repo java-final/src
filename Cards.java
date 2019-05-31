@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Cards{
 
-    public static ArrayList<String> shuffle(ArrayList<String> deck) {
+    public static ArrayList<String> shuffle(ArrayList<String> deck) { //shuffles deck
         ArrayList<String> x = new ArrayList<String>();
         for (int i = 0; i < 52; i++) {
             Random random = new Random();
@@ -12,7 +12,7 @@ public class Cards{
         }
         return x;
     }
-    public static ArrayList<String> createDeck(String [] deck){
+    public static ArrayList<String> createDeck(String [] deck){ //creates deck (52 cards)
         ArrayList<String> newDeck = new ArrayList<String>();
         for(int i = 0; i < deck.length; i++){
             newDeck.add(deck[i]);
@@ -20,6 +20,7 @@ public class Cards{
         return newDeck;
     }
     public static void divideDeck(ArrayList<String> fullDeck, ArrayList<String> playerDeck, ArrayList<String> opponentDeck){
+        //gives each player 26 cards each
         for(int i = 1; i < 53; i++){
             if(i % 2 == 0){
                 playerDeck.add(fullDeck.get(i - 1));
@@ -30,14 +31,17 @@ public class Cards{
         }
     }
     public static boolean result(int playerCardValue, int opponentCardValue, ArrayList<String> playerDeck,
-                                 ArrayList<String> opponentDeck, ArrayList<String> mid, int warCount, boolean game, int playerCount, int opponentCount){
-        if(warCount < 2){
+                                 ArrayList<String> opponentDeck, ArrayList<String> mid, int warCount,
+                                 boolean game, int playerCount, int opponentCount){
+
+        if(warCount < 2){ //takes cards in and out of "middle"
             mid.add(playerDeck.get(0));
             mid.add(opponentDeck.get(0));
             playerDeck.remove(0);
             opponentDeck.remove(0);
         }
         if(playerCardValue > opponentCardValue){
+            //sees which card has a higher rank, and calls either "player wins" or "opponent wins" method
             Cards.playerWins(playerDeck, opponentDeck, mid, warCount, playerCount);
 
         }

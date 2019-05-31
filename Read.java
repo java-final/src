@@ -8,17 +8,24 @@ import java.nio.file.Paths;
 import static java.nio.file.StandardOpenOption.CREATE;
 
 public class Read {
-    public static void read(int x){
+    public static void read(int x, int i){
 
         Path file = Paths.get("C:\\Users\\mn145140\\Desktop\\Java\\War\\src\\Score.txt");
         InputStream input;
         try{
             input = Files.newInputStream(file);
             BufferedReader reader = new BufferedReader(new InputStreamReader(input));
+
             String s;
             s = reader.readLine();
             x = 10 + Integer.parseInt(s);
             System.out.println(x);
+            input.close();
+
+            String o;
+            o = reader.readLine();
+            i = 10 + Integer.parseInt(o);
+            System.out.println(i);
             input.close();
         }
         catch (Exception e){
