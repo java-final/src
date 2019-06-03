@@ -13,14 +13,15 @@ Rules of WAR:
        <li>Place the cards won on bottom of winner's deck</li>
        <li>Repeat rules 2-4 until one player is out of cards.</li>
       <li> Player with the all cards in the end wins.</li>
-      IF the cards are of the same value, Declare WAR.</li>
   </ol>
   
+  <o1>
+      <1i>If the cards are of the same value, Declare WAR.</li>
       Rules of Declare WAR: 
-       1. The players draw the top 3 cards and place them face down.
-       2. The players then draw a card from their deck and place it face up.
-       3. Highest card wins and the winner collects all 8 cards used in the Declare WAR.
-       4. Place the cards won on the bottom of winner's deck
-       5. Continue normal WAR rules 2-4 until a player has all cards
-        
-   
+      <li>The players draw the top 3 cards and place them face down. </li>
+      <li>The players then draw a card from their deck and place it face up.</li>
+      <li>Highest card wins and the winner collects all 8 cards used in the Declare WAR.</li>
+      <li>Place the cards won on the bottom of winner's deck.</li>
+      <li>Continue normal WAR rules 2-4 until a player has all cards.</li>
+ </o1>
+ 
