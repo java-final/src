@@ -15,6 +15,9 @@ public class Main {
         String opponentCard = null;
         int playerCardValue;
         int opponentCardValue;
+        String noWinner = "Nobody won the game, quit early. \n";
+        String playerWins = "You won the game. \n";
+        String opponentWins = "The opponent won the game. \n";
 
         while(play == true){
             boolean playerWinner = false;
@@ -72,32 +75,35 @@ public class Main {
                     game = false;
                 }
             }
-            System.out.println("--------------------------------------------------");
             if(playerWinner == true){
+
                 System.out.println("You WIN the game!! Congratulations :)))\n " );
                 System.out.println("~~~~~~~~~~Thanks for playing!~~~~~~~~~~");
 
-                Write.write(String.valueOf(playerCount), String.valueOf(opponentCount));
-
+                Write.write(String.valueOf(playerCount), String.valueOf(opponentCount), (playerWins));
+                Read.read();
             }
-            else if(opponentWinner == true){
+            else if(opponentWinner == true) {
+
                 System.out.println("The opponent wins the game... Bummer :((( \n ");
                 System.out.println("~~~~~~~~~~Thanks for playing!~~~~~~~~~~");
 
-                Write.write(String.valueOf(playerCount), String.valueOf(opponentCount));
+                Write.write(String.valueOf(playerCount), String.valueOf(opponentCount), (opponentWins));
+                Read.read();
             }
             System.out.println("Press (q) to quit the game. ");
+
             if(input.nextLine().equals("q")){
                 System.out.println("\n");
                 play = false;
 
-                System.out.println("Thanks for playing!");
+                System.out.println("Thanks for playing! \n");
+                System.out.println("**********************************************");
 
-                Write.write(String.valueOf(playerCount), String.valueOf(opponentCount));
+                Write.write(String.valueOf(playerCount), String.valueOf(opponentCount), (noWinner));
+                Read.read();
 
-                System.out.println("------------------------------------------");
-                System.out.println("| Player won " + playerCount + " rounds. |");
-
+                System.out.println("**********************************************");
             }
         }
     }

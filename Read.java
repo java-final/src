@@ -1,28 +1,18 @@
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import static java.nio.file.StandardOpenOption.CREATE;
+import java.io.IOException;
 
 public class Read {
-    public static void read(int x){
+    public static void read() {
 
-        Path file = Paths.get("C:\\Users\\mn145140\\Desktop\\Java\\War\\src\\Score.txt");
-        InputStream input;
+        BufferedReader in;
+
         try{
-            input = Files.newInputStream(file);
-            BufferedReader reader = new BufferedReader(new InputStreamReader(input));
-            String s;
-            s = reader.readLine();
-            x = 10 + Integer.parseInt(s);
-            System.out.println(x);
-            input.close();
+            System.out.println(new String(Files.readAllBytes(Paths.get("Score.txt"))));;
         }
-        catch (Exception e){
-            System.out.println(e);
+        catch(IOException e){
+            e.printStackTrace();
         }
     }
 }
