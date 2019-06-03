@@ -3,9 +3,10 @@ import java.util.*;
 public class Cards{
 
     public static ArrayList<String> shuffle(ArrayList<String> deck) {
+        //this method shuffles the deck randomly
         ArrayList<String> x = new ArrayList<String>();
         for (int i = 0; i < 52; i++) {
-            Random random = new Random();
+            Random random = new Random(); //randomness!
             int y = random.nextInt(deck.size());
             x.add(deck.get(y));
             deck.remove(y);
@@ -13,6 +14,7 @@ public class Cards{
         return x;
     }
     public static ArrayList<String> createDeck(String [] deck){
+        //this method creates a deck of 52 cards
         ArrayList<String> newDeck = new ArrayList<String>();
         for(int i = 0; i < deck.length; i++){
             newDeck.add(deck[i]);
@@ -20,6 +22,7 @@ public class Cards{
         return newDeck;
     }
     public static void divideDeck(ArrayList<String> fullDeck, ArrayList<String> playerDeck, ArrayList<String> opponentDeck){
+       //this method divides the deck into 26 cards each
         for(int i = 1; i < 53; i++){
             if(i % 2 == 0){
                 playerDeck.add(fullDeck.get(i - 1));
@@ -31,6 +34,7 @@ public class Cards{
     }
     public static boolean result(int playerCardValue, int opponentCardValue, ArrayList<String> playerDeck,
                                  ArrayList<String> opponentDeck, ArrayList<String> mid, int warCount, boolean game, int playerCount, int opponentCount){
+        //this method checks what card value is larger, and adds/removes cards to the decks
         if(warCount < 2){
             mid.add(playerDeck.get(0));
             mid.add(opponentDeck.get(0));
@@ -65,6 +69,7 @@ public class Cards{
     }
     public static void playerWins(ArrayList<String> playerDeck, ArrayList<String> opponentDeck,
                                   ArrayList<String> mid, int warCount, int playerCount){
+        //this method is called when the player card value is larger
         if(warCount > 1){
             System.out.println("You WON the war round! So, you received >> " + mid);
         }
@@ -77,6 +82,7 @@ public class Cards{
     }
     public static void opponentWins(ArrayList<String> playerDeck, ArrayList<String> opponentDeck,
                                     ArrayList<String> mid, int warCount, int opponentCount){
+        //this method is called when the opponent card value is larger
         if(warCount > 1){
             System.out.println("Aw... They won the war round.");
         }
@@ -89,6 +95,7 @@ public class Cards{
         mid.clear();
     }
     public static int rank(String cards){
+        //this method puts certain card rankings at a higher value: ace = highest, 2 = lowest
         int rank = 0;
         if(cards.charAt(0) == 'X'){
             rank = 10;
@@ -106,27 +113,28 @@ public class Cards{
             rank = 14;
         }
         else{
-            rank=Character.getNumericValue(cards.charAt(0));
+            rank = Character.getNumericValue(cards.charAt(0));
         }
         return rank;
     }
     public static void war(ArrayList<String> playerDeck, ArrayList<String> opponentDeck, ArrayList<String> mid,
-                           int warCount, boolean game,int playerCount,int opponentCount){//addresses decks when there is a war
+                           int warCount, boolean game,int playerCount,int opponentCount){
+      //called when there is a war (two cards hold same rank)
         Scanner input = new Scanner(System.in);
         System.out.println("~~~~~~~~~~~~~~~~~~~~ENTERING WAR~~~~~~~~~~~~~~~~~~~~");
         System.out.println("You each place a face down card");
         System.out.println();
 
-        String playerWarCard=mid.get(mid.size()-2);
-        String houseWarCard=mid.get(mid.size()-1);
-        int playerWarRank= Cards.rank(playerWarCard);
-        int houseWarRank = Cards.rank(houseWarCard);
+        String playerWarCard = mid.get(mid.size()-2);
+        String opponentWarCard = mid.get(mid.size()-1);
+        int playerWarRank = Cards.rank(playerWarCard);
+        int opponentWarRank = Cards.rank(opponentWarCard);
 
         System.out.println("You now play a face up card: " + playerWarCard);
         System.out.println("Press enter to see the outcome...");
         input.nextLine();
-        System.out.println("They play a face up card: " + houseWarCard);
+        System.out.println("They play a face up card: " + opponentWarCard);
         warCount++;
-        Cards.result(playerWarRank, houseWarRank, playerDeck, opponentDeck, mid, warCount, game, playerCount, opponentCount);
+        Cards.result(playerWarRank, opponentWarRank, playerDeck, opponentDeck, mid, warCount, game, playerCount, opponentCount);
     }
 }
