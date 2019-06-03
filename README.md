@@ -16,7 +16,7 @@ Rules of WAR:
   </ol>
   
   <o1>
-      <1i>If the cards are of the same value, Declare WAR.</li>
+      If the cards are of the same value, Declare WAR.</li>
       Rules of Declare WAR: 
       <li>The players draw the top 3 cards and place them face down. </li>
       <li>The players then draw a card from their deck and place it face up.</li>
