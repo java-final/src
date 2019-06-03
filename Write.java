@@ -1,27 +1,27 @@
-import java.io.BufferedOutputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.nio.file.Files;
+import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import static java.nio.file.StandardOpenOption.CREATE;
-
 public class Write {
-    public static void write(String p, String o) {
+    public static void write(String p, String o, String w) {
         Path file = Paths.get("C:\\Users\\mn145140\\Desktop\\Java\\War\\src\\Score.txt");
 
         byte[] data = p.getBytes();
         byte[] data1 = o.getBytes();
+        byte[] data2 = w.getBytes();
         try {
             BufferedOutputStream output = new BufferedOutputStream(new FileOutputStream("Score.txt"));
+
 
             output.write(("# of rounds won by you : ").getBytes());
             output.write(data);
             output.write(System.lineSeparator().getBytes());
             output.write((" \n# of rounds won by opponent : ").getBytes());
             output.write(data1);
+            output.write(System.lineSeparator().getBytes());
+            output.write(("Winner of game : ") .getBytes());
+            output.write(data2);
+            output.write(System.lineSeparator().getBytes());
 
             output.flush();
             output.close();
