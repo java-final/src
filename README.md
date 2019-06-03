@@ -4,6 +4,7 @@
 **Symantha Conger & Meghan Nahnybida** :sparkles:
 
 How it Works:
+
 Rules of WAR:
 
 <ol>
