@@ -7,7 +7,7 @@ For our project we made the card game WAR. In the game the user plays against th
  <h3> Authors: </h3>
       <li>Symantha Conger @AceSilverRyuu </li>
       <li>Meghan Nahnybida @meghannahnybida </li>
-      
+![] (images/flowchart.png)      
 <h3> Built With: </h3>
       <li>This project was built entirely with IntelliJ IDEA </li>
       
