@@ -1,6 +1,6 @@
 # WAR
 :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles:
-:sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: 
+:sparkles: :sparkles: :sparkles: :sparkles: 
 <hr size = "4">
 
 <h3> Project: </h3>
