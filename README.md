@@ -11,7 +11,12 @@ For our project we made the card game WAR. In the game the user plays against th
 ![flowchart](https://user-images.githubusercontent.com/49411343/58842614-b71c0900-8634-11e9-8a74-480efc8e2a0d.png)
 
 <hr size = "4">
+
+<h3> Video: </h3>
  <a href ="https://www.youtube.com/watch?v=cFMGsMukVoo&feature=youtu.be">My video is here!</a>
+ 
+ 
+<hr size = "4">
 
 <h3> Built With: </h3>
       <li>This project was built entirely with IntelliJ IDEA </li>
