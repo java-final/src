@@ -12,7 +12,7 @@ public class Write {
         try {
             BufferedOutputStream output = new BufferedOutputStream(new FileOutputStream("Score.txt"));
 
-            output.write(("# of rounds won by you : ").getBytes());
+            output.write(("\n# of rounds won by you : ").getBytes());
             output.write(data);
             output.write(System.lineSeparator().getBytes()); //Puts a line in between each String
             output.write(("\n# of rounds won by opponent : ").getBytes());
