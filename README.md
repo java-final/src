@@ -17,7 +17,7 @@ For our project we made the card game WAR. In the game the user plays against th
       <hr size = "4">
       
 <h3> License </h3>
-      <li>????</li>
+      <li>MIT License</li>
       <hr size = "4">
       
 <h3> Authors: </h3>
