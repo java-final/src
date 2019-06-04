@@ -1,7 +1,5 @@
 # WAR
-:sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles: :sparkles:
-:sparkles: :sparkles: :sparkles: :sparkles: 
-:spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds:
+:spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades: :hearts: :clubs: :diamonds: :spades:
 <hr size = "4">
 
 <h3> Project: </h3>
