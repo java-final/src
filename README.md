@@ -9,7 +9,7 @@ For our project we made the card game WAR. In the game the user plays against th
  
  <h3> Flowchart: </h3>
  
-![flowchart](https://user-images.githubusercontent.com/49411343/58841859-58a15b80-8631-11e9-908f-f54e0c30a6f6.png)
+<img src="flowchart.jpg" height = "400" width ="400">
     <hr size = "4">
 
 <h3> Built With: </h3>
