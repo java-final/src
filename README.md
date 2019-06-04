@@ -4,7 +4,7 @@
 <hr size = "4">
 
 <h3> Project: </h3>
-For our project we made the card game WAR. In the game the user plays against the computer. From then on, it is up to fate to decide who will be the victor of the intense card game WAR. 
+For our project we made the card game WAR. In the game the user plays against the computer. From then on, it is up to fate to decide who will be the victor of the "intense" card game WAR. 
  <hr size = "4">
  
  <h3> Flowchart: </h3>
