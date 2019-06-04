@@ -13,7 +13,7 @@ For our project we made the card game WAR. In the game the user plays against th
 <hr size = "4">
 
 <h3> Video: </h3>
- <a href ="https://www.youtube.com/watch?v=cFMGsMukVoo&feature=youtu.be">My video is here!</a>
+ <a href ="https://www.youtube.com/watch?v=cFMGsMukVoo&feature=youtu.be">Click here for Video :))</a>
  
  
 <hr size = "4">
