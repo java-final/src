@@ -137,4 +137,9 @@ public class Cards{
         warCount++;
         Cards.result(playerWarRank, opponentWarRank, playerDeck, opponentDeck, mid, warCount, game, playerCount, opponentCount);
     }
+    public static void emoji(){
+        for(int i = 0; i < 10; i++){
+            System.out.print("\u2663" + "\u2666" + "\u2665" + "\u2660");
+        }
+    }
 }
